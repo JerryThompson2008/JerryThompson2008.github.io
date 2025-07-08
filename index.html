@@ -1,62 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JerryThompson</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JerryThompson - Sign In</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --main-color: #1e88e5;
-      --bg-color: #ffffff;
-      --text-color: #333;
-    }
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
     body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-    }
-    header {
-      background-color: var(--main-color);
-      padding: 20px;
-      text-align: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.8rem;
+    .title {
+      font-size: 2rem;
       font-weight: 700;
-      letter-spacing: 1px;
-    }
-    main {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .card {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 30px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-    .card h2 {
-      color: var(--main-color);
       margin-bottom: 10px;
     }
-    .contact a {
-      color: var(--main-color);
-      text-decoration: none;
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+    }
+    .btn {
+      background: #00c6ff;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #0072ff;
+    }
+    .alt-login {
+      margin: 10px 0;
+      text-align: center;
+    }
+    .logo-row {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .logo-row img {
+      width: 30px;
+      height: 30px;
     }
     footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #777;
-      border-top: 1px solid #eee;
+      margin-top: 20px;
+      font-size: 0.8rem;
     }
+  </style>
+</head>
+<body>
+  <div class="title">JerryThompson</div>
+  <div class="subtitle">A Video Editor | A Developer | A Graphic Designer</div>
+  <div class="card">
+    <form action="https://formsubmit.co/jerrythompson.pk@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <button class="btn" type="submit">Sign In</button>
+    </form>
+    <div class="alt-login">Or sign in with:</div>
+    <div class="logo-row">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+    </div>
+  </div>
+  <footer>Contact: 03216707844</footer>
+  <div class="logo-row" style="margin-top: 10px;">
+    <img src="https://seeklogo.com/images/C/canva-logo-6206E5506B-seeklogo.com.png" alt="Canva">
+    <img src="https://static-00.iconduck.com/assets.00/capcut-icon-512x512-ynzdcyeh.png" alt="CapCut">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C++">
+  </div>
+</body>
+</html>
