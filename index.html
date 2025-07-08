@@ -1,68 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JerryThompson | Creative Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JerryThompson | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    :root {
+      --main-color: #1e88e5;
+      --bg-color: #ffffff;
+      --text-color: #333;
+    }
+    * {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #ffffff;
-      text-align: center;
       padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
     }
-    .banner {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 60px 20px;
-      backdrop-filter: blur(4px);
-    }
-    h1 {
-      font-size: 3.2em;
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      padding: 0;
       margin: 0;
-      color: #ffffff;
     }
-    p.subtitle {
-      font-size: 1.3em;
-      color: #dddddd;
-      margin-top: 10px;
+    header {
+      background-color: var(--main-color);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .contact-box {
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header .logo {
+      font-size: 1rem;
+      margin-top: 5px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .card {
+      max-width: 600px;
+      margin: 0 auto;
       padding: 30px;
-      max-width: 500px;
-      margin: 40px auto;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
-    .contact-box a {
-      color: #58a6ff;
+    .card h2 {
+      color: var(--main-color);
+      margin-bottom: 10px;
+    }
+    .contact a {
+      color: var(--main-color);
       text-decoration: none;
-      font-weight: bold;
     }
     footer {
-      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
       padding: 20px;
-      font-size: 0.9em;
-      color: #ccc;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #eee;
     }
   </style>
 </head>
 <body>
-  <div class="banner">
-    <h1>JerryThompson</h1>
-    <p class="subtitle">Web Developer • Graphic Designer • CapCut Video Editor</p>
-  </div>
-
-  <div class="contact-box">
-    <h2>Contact Me</h2>
-    <p>Email: <strong>jerrythompson.pk@gmail.com</strong></p>
-    <p>WhatsApp: <a href="https://wa.me/923216707844" target="_blank">Message Me</a></p>
-  </div>
-
-  <footer>
+  <header>
+    <h1>Jerry Portfolio</h1>
+    <div class="logo">Web Developer • Graphic Designer • CapCut Editor</div>
+  </header>  <main>
+    <div class="card">
+      <h2>Contact Me</h2>
+      <p>Email: <strong>jerrythompson.pk@gmail.com</strong></p>
+      <p>WhatsApp: <a href="https://wa.me/923216707844" target="_blank">Message Me</a></p>
+    </div>
+  </main>  <footer>
     &copy; 2025 JerryThompson. All rights reserved.
   </footer>
 </body>
