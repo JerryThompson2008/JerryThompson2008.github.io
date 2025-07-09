@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JerryThompson - Contact</title>
+  <title>JerryThompson - Developer | Editor | Designer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     * {
       margin: 0;
@@ -15,51 +17,75 @@
     body {
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      min-height: 100vh;
+      line-height: 1.6;
     }
-    .title {
-      font-size: 2.5rem;
-      font-weight: bold;
+    header {
+      background: rgba(0,0,0,0.3);
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: 0 0 5px #00c6ff;
+    }
+    .intro {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .intro h2 {
+      font-size: 1.8rem;
       margin-bottom: 10px;
     }
-    .subtitle {
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      text-align: center;
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
     }
     .card {
       background: rgba(255, 255, 255, 0.1);
-      border-radius: 15px;
-      padding: 30px;
-      width: 100%;
-      max-width: 400px;
+      border-radius: 12px;
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(5px);
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      backdrop-filter: blur(10px);
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card i {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #00c6ff;
+    }
+    form {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 30px auto;
+      padding: 30px;
+      max-width: 400px;
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
     }
     input, textarea {
       width: 100%;
-      padding: 12px;
+      padding: 10px;
       margin: 10px 0;
-      border: none;
       border-radius: 8px;
+      border: none;
       outline: none;
       font-size: 1rem;
     }
     .btn {
       background: #00c6ff;
-      padding: 12px;
       border: none;
+      padding: 12px;
       width: 100%;
-      color: white;
       font-weight: bold;
+      color: white;
       border-radius: 8px;
       cursor: pointer;
-      transition: 0.3s ease;
     }
     .btn:hover {
       background: #0072ff;
@@ -67,40 +93,64 @@
     .logo-row {
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 15px;
       margin-top: 20px;
     }
     .logo-row img {
-      width: 32px;
       height: 32px;
     }
     footer {
-      margin-top: 20px;
+      background: rgba(0,0,0,0.3);
+      padding: 20px;
       text-align: center;
       font-size: 0.85rem;
-      opacity: 0.8;
     }
   </style>
 </head>
 <body>
-  <div class="title">JerryThompson</div>
-  <div class="subtitle">A Video Editor | A Developer | A Graphic Designer</div>
-  <div class="card">
-    <form action="https://formsubmit.co/jerrythompson.pk@gmail.com" method="POST">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button class="btn" type="submit">Send Message</button>
-    </form>
-  </div>
+
+  <header>JerryThompson</header>
+
+  <section class="intro">
+    <h2>A Video Editor | A Developer | A Graphic Designer</h2>
+    <p>Welcome to my creative portfolio. I build stunning visuals, powerful websites, and edit videos with precision and passion.</p>
+  </section>
+
+  <section class="services">
+    <div class="card">
+      <i class="fas fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Building responsive websites with modern design and performance.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-video"></i>
+      <h3>Video Editing</h3>
+      <p>Professional cuts and effects using CapCut for cinematic results.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-paint-brush"></i>
+      <h3>Graphic Design</h3>
+      <p>Creative, clean, and modern designs using Canva and custom tools.</p>
+    </div>
+  </section>
+
+  <form action="https://formsubmit.co/jerrythompson.pk@gmail.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+
   <div class="logo-row">
     <img src="https://seeklogo.com/images/C/canva-logo-6206E5506B-seeklogo.com.png" alt="Canva">
     <img src="https://static-00.iconduck.com/assets.00/capcut-icon-512x512-ynzdcyeh.png" alt="CapCut">
     <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C++">
   </div>
+
   <footer>
-    Contact: 03216707844
+    Contact: 03216707844 | &copy; 2025 JerryThompson
   </footer>
+
 </body>
 </html>
